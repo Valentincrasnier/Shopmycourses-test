@@ -2,6 +2,8 @@
 
 Project Test for shopmycourse by Valentin crasnier
 
+http://ancient-river-17605.herokuapp.com/
+
 ## Prerequisites
 
 *   Ruby 2.2.0
