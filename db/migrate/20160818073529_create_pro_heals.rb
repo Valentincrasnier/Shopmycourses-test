@@ -8,7 +8,7 @@ class CreateProHeals < ActiveRecord::Migration
       t.string :job
       t.string :city
       t.string :postal_code
-      t.stringv :avatar
+      t.string :avatar
       t.timestamps null: false
     end
   end
