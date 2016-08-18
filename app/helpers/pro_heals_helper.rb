@@ -1,0 +1,2 @@
+module ProHealsHelper
+end

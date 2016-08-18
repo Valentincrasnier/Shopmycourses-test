@@ -1,0 +1,40 @@
+<table class="table table-striped table-condensed">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Firstname
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Job
+        </th>
+        <th>
+            <span class="glyphicon glyphicon-eye-open"></span>
+            More
+        </th>
+    </tr>
+    <% @pro_heal.each do |p| %>
+    <tr>
+        <td>
+            <%=p.name %>
+        </td>
+        <td>
+            <%=p.surname %>
+        </td>
+        <td>
+            <%= p.city %>
+        </td>
+        <td>
+            <%= p.job %>
+        </td>
+        <td>
+            <%= button_to 'More', pro_heal_path(p.id), method: :get, class: 'btn btn-danger' %><br/><br/>
+        </td>
+    </tr>
+    <% end %>
+</table>
+<br/>

@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+        <%= form_for @pro_heal do |f| %>
+        <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+            <%= f.label :surname %>
+            <%= f.text_field :surname, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+            <%= f.label :phone %>
+            <%= f.text_field :phone, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+            <%= f.label :location %>
+            <%= f.text_field :location, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+            <%= f.label :postal_code %>
+            <%= f.text_field :postal_code, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+            <%= f.label :city %>
+            <%= f.text_field :city, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+            <%= f.label :job %>
+            <%= f.text_field :job, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+            <%= f.label :avatar %>
+            <%= f.file_field :avatar, class: 'form-control' %>
+        </div>
+
+        <%= f.submit 'Save', :class => 'btn btn-primary btn-block' %>
+        <% end %>
+    </div>
+</div>
